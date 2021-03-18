@@ -1,0 +1,262 @@
+	
+	page{
+			background-color: #f1ece7;
+	}
+	view{
+		
+		// 首页轮播
+		.banner{
+			
+			.swiper{
+				width: 100%;
+				height: 380rpx ;
+			
+				image{
+					width: 100%;
+					height: 380rpx;
+				}
+			}
+		}
+		//首页icon图
+		.icon{
+			width: 100%;
+			display: flex;
+			 justify-content: space-around;
+			margin-top: 60rpx;
+			view{
+				width: 80rpx;
+				height: 130rpx;
+				font-size: 30rpx;
+				image{
+					width: 100%;
+					height: 80rpx;
+					// text-align: center;
+				}
+				view{
+					text-align: center;
+					width: 90rpx;
+					height: 40rpx;
+					
+				}
+				
+			}
+		}
+		// 限时活动
+		.activity{
+			width: 90%;
+			height: 100rpx;
+			background-color: #fff;
+			margin: 0 auto;
+			margin-top: 50rpx;
+			display: flex;
+			
+			.left{
+				width: 38% ;
+				height: 100rpx;
+				display: flex;
+				font-size: 32rpx;
+				color: orange;
+				font-weight: 700;
+				line-height: 100rpx;
+				margin-left: 30rpx;
+				image{
+					width: 50rpx;
+					height: 50rpx;
+					margin-top: 25rpx;
+					 animation: fade 600ms infinite;
+					  
+					@keyframes fade {
+					    from {
+					        opacity: 1.0;
+					    }
+					    50% {
+					        opacity: 0.4;
+					    }
+					    to {
+					        opacity: 1.0;
+					    }
+					}
+					
+				}
+			}
+			.right{
+				width: 62%;
+				height: 100rpx;
+				overflow: hidden;
+				.text{
+					height: 100rpx;
+					line-height: 100rpx;
+					font-size: 30rpx;
+					width: 65%;
+					overflow: hidden;
+					text-overflow:ellipsis;
+					white-space: nowrap;
+					float: left;
+					color: #808080;
+				}
+				.price{
+					width: 35%;
+					height: 100rpx;
+					
+					float: left;
+					font-size: 26rpx;
+					font-weight: 700;
+					
+					.old{
+						height: 50rpx;
+						line-height: 60rpx;
+						text-decoration:line-through    
+					}
+					.new{
+						height: 50rpx;
+						color: red;
+						
+					}
+					
+				}
+			}
+		}
+		//热门推荐
+		.main{
+			width: 90%;
+			margin: 0 auto;
+			overflow: hidden;
+			.hot{
+				margin-top: 40rpx;
+				.title{
+					font-size: 37rpx;
+					font-weight: 700;
+					
+				}
+				.banner{
+					.swiper{
+						height: 240rpx;
+					}
+					margin-top: 40rpx;
+					width: 100%;
+					height: 300rpx;
+					image{
+						width: 208rpx;
+						height: 176rpx;
+					}
+					view{
+						
+						view{
+							width: 180rpx;
+							font-size: 25rpx;
+							text-align: center;
+							overflow: hidden;
+							text-overflow:ellipsis;
+							white-space: nowrap;
+						}
+					}
+				}
+			}
+			//新品推荐
+			.new{
+				
+				.title{
+					font-size: 37rpx;
+					font-weight: 700;
+				}
+				.newList{
+					display: flex;
+					overflow-x: scroll;
+					
+					.newIte{
+						// width: 600rp
+						margin-right: 30rpx;
+						background-color: #fff;
+						width: 500px;
+						height: 260rpx;
+						border-radius: 30rpx;
+						margin-top: 40rpx;
+						.img{
+							width: 190rpx;
+							height: 160rpx;
+							float: left;
+							margin-top: 10%;
+							margin-left: 10%;
+							border-radius: 15rpx;
+						}
+						.aaa{
+							width: 500rpx;
+							height: 100%;
+							font-size: 27rpx;
+							.text{
+							// position: absolute;
+							float: right;
+							width: 235rpx;
+							color: #3e3e3e;
+								// background-color: red;
+								margin-top: 10%;
+								.name{
+									overflow: hidden;
+									text-overflow:ellipsis;
+									white-space: nowrap;
+								}
+								.price{
+									margin-top: 40%;
+								}
+							}
+							
+						}
+					}
+				}
+			
+			}
+			
+			
+				// 猜你喜欢
+			.like{
+				margin-top: 40rpx;
+				.title{
+					font-size: 37rpx;
+					font-weight: 700;
+				}
+				.like_list{
+					margin-top: 40rpx;
+					display: flex;
+					flex-wrap: wrap;
+					width: 100%;
+					justify-content: space-between;
+					.item{
+					background-color: #FFFFFF;
+					margin-bottom: 30rpx;
+					width: 47%;
+						
+					image{
+						width: 320rpx;
+						height: 250rpx;
+					}
+					.text{
+						margin: 0 auto;
+						width: 240rpx;
+						font-size: 25rpx;
+						width: 80%;
+						padding-top:20rpx;
+						
+						.name{
+							overflow: hidden;
+							text-overflow:ellipsis;
+							white-space: nowrap;
+							font-weight: 700;
+							font-size: 27rpx;
+						}
+						.price{
+							display: flex;
+							justify-content: space-between;
+							margin-top: 20rpx;
+							margin-bottom: 20rpx;
+						}
+						
+					}
+					}
+				}
+			}
+		
+		
+		}
+	
+		
+	}

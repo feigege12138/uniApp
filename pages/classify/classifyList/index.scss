@@ -1,0 +1,99 @@
+page{
+	background-color: #f1ece7;
+}
+
+
+view{
+	
+	.nav{
+		width: 100%;
+		background-color: #354e44;
+		height: 80rpx;
+		.nav-c{
+			width: 100%;
+			margin: 0 auto;
+			display: flex;
+			color: #fff;
+			position: fixed;
+			justify-content: space-around;
+			background-color: #354e44;
+			height: 80rpx;
+			z-index: 99900;
+			.org{
+				color: red;
+				
+				}
+			.nav-item{
+				// width: 25%;
+				text-align: center;
+				height: 80rpx;
+				font-size: 30rpx;
+				line-height: 40rpx;
+				display: flex;
+				
+				.icons{
+					height: 40rpx;
+					display: flex;
+					align-items: center;
+					flex-direction: column;
+					
+					.uni-icons{
+						height: 20rpx;
+						margin-top: -5rpx;
+					}
+				}
+			}
+		}
+	}
+
+
+	.like{
+		margin-top: 200rpx;
+		width: 90%;
+		margin: 0 auto;
+		.title{
+			font-size: 37rpx;
+			font-weight: 700;
+		}
+		.like_list{
+			margin-top: 40rpx;
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+			justify-content: space-between;
+			.item{
+			background-color: #FFFFFF;
+			margin-bottom: 30rpx;
+			width: 47%;
+				
+			image{
+				width: 320rpx;
+				height: 250rpx;
+			}
+			.text{
+				margin: 0 auto;
+				width: 240rpx;
+				font-size: 25rpx;
+				width: 80%;
+				padding-top:20rpx;
+				
+				.name{
+					overflow: hidden;
+					text-overflow:ellipsis;
+					white-space: nowrap;
+					font-weight: 700;
+					font-size: 27rpx;
+				}
+				.price{
+					display: flex;
+					justify-content: space-between;
+					margin-top: 20rpx;
+					margin-bottom: 20rpx;
+				}
+				
+			}
+			}
+		}
+	}
+
+}

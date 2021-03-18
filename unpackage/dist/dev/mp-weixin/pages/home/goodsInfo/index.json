@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "goodifo",
+  "navigationBarBackgroundColor": "#354e44",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "uni-icons": "/components/uni-icons/uni-icons",
+    "mp-html": "/components/mp-html/mp-html"
+  }
+}
